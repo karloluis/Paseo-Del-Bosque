@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Address from './components/Address';
+import CondoBoard from './components/CondoBoard';
+import RecentAnnouncements from './components/RecentAnnouncements';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div id="App_Grid">
+      <div id="App_Intro">
+        <h1 id="App_Title">Paseo del Bosque</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Aquí encontrará información general del complejo y los eventos y
+          reportes más recientes.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+
+      <Address />
+      {/* <CondoBoard /> */}
+      <RecentAnnouncements />
     </div>
   );
 }
